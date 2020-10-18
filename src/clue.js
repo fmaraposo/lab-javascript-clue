@@ -148,12 +148,11 @@ const weaponsArray = [
 
     function selectRandom(array) {
         if (array.length === 0) {
-            return undefined
+            return undefined;
         } else {
-            return array[Math.floor(Math.random()*array.length)];
-            
+            return array[Math.floor(Math.random()*array.length)];  
         }
-    };
+    }
         
         console.log(selectRandom(suspectsArray));
 
@@ -175,7 +174,7 @@ const weaponsArray = [
        //<FIRST NAME> <LAST NAME> killed Mr. Boddy using the <WEAPON> in the <ROOM>!
 
         function revealMystery (mistery) {
-            return `${mistery.suspect.firstName} ${mistery.suspect.lastName} killed Mr.Boddy using ${mistery.weapon.name} in the ${mistery.room.name}!`;
+            return `${mistery.suspect.firstName} ${mistery.suspect.lastName} killed Mr. Boddy using the ${mistery.weapon.name} in the ${mistery.room.name}!`;
         }
 
         console.log(revealMystery(pickMystery()));
